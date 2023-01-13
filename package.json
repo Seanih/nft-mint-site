@@ -9,11 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.8",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@openzeppelin/contracts": "^4.8.0",
+    "framer-motion": "^6.5.1",
+    "hardhat": "^2.12.6",
     "next": "13.1.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "shorthand": "^1.0.0"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.2"
   }
