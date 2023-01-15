@@ -5,7 +5,7 @@ pragma solidity ^0.8.4;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract RoboPunksNfts is ERC721, Ownable {
+contract RoboPunksNFT is ERC721, Ownable {
     uint256 public mintPrice;
     uint256 public totalSupply;
     uint256 public maxSupply;
@@ -67,7 +67,7 @@ contract RoboPunksNfts is ERC721, Ownable {
         require(totalSupply + _quantity <= maxSupply, "sold out");
         require(
             walletMints[msg.sender] + _quantity <= maxPerWallet,
-            "exceed max wallet"
+            "exceeded max wallet amount"
         );
 
         for (uint256 i = 0; i < _quantity; i++) {
